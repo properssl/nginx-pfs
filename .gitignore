@@ -1,0 +1,10 @@
+.DS_Store
+.cache
+.classpath
+.externalToolBuilders/
+.project
+.settings/
+target/
+~/
+.vagrant/
+src/test/resources/server.crt

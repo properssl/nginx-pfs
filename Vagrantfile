@@ -1,0 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.share_folder "bootstrap", "/mnt/bootstrap", "Vagrant-setup/share", :create => true
+  config.vm.provision :shell, :path => "Vagrant-setup/bootstrap.sh"
+  config.vm.forward_port 80, 10080
+  config.vm.forward_port 443, 10443
+end
