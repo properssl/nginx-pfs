@@ -4,6 +4,7 @@ This is a sample configuration of nginx with SSL for [PFS (Perfect Forward Secre
 This configuration includes:
 
 * The server prefers using [ECDHE] for key exchange
+* It redirects all HTTP traffic to HTTPS
 * It sends back [HSTS] headers on all SSL requests
 * It sends back an X-Frame-Options DENY header to prevent [Clickjacking]
 
