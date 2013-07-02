@@ -7,6 +7,8 @@ This configuration includes:
 * It redirects all HTTP traffic to HTTPS
 * It sends back [HSTS] headers on all SSL requests
 * It sends back an X-Frame-Options DENY header to prevent [Clickjacking]
+ 
+For other examples of properly establishing SSL connections check out http://properssl.org/.
 
 ### Vagrant
 To setup the test server run `vagrant up`.
